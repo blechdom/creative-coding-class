@@ -1,80 +1,56 @@
 # Creative Coding Syllabus
-    UCSC Engineering  
-    Computational Media  
-    Winter 2022  
-    Tuesday and Thursday  
-    9:50AM-11:25PM  
+- UCSC Engineering
+- Computational Media
+- Winter 2022
+- Tuesday and Thursday
+- 9:50AM-11:25PM 
+- Building/Room 
 ## Course Description
 ## Instructor Information
-    name: Kristin Galvin, DMA  
-    email: kgericks@ucsc.edu  
-    phone: 831-346-2532  
-    office: remote  
-    office hours: remote - TBD  
+- Kristin Galvin, DMA 👽  
+- kgericks@ucsc.edu 📩  
+- 831-346-2532 (texting okay) 📞  
+- office: remote 📍 
+- office hours: remote(TBD) 🕰️ 
 ## T.A. Information
-    name:  
-    email: @ucsc.edu  
-    phone:  
-    office:  
-    office hours:  
+- 👽 
+- 📩  
+- 📞 
+- 📍
+- 🕰️ 
 ## Course Objectives
 
 ## Materials Needed
-* a computer :computer:
-* a github account
+Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice.
+
+You must be able to access the internet via eduroam or using an ethernet cable. 
+
+Links to any required readings will be provided by the instructor. 
+
+http://eloquentjavascript.net/
+https://github.com/sorrycc/awesome-javascript
+
+* 💻 a computer
+* :octocat: a github account
 * a terminal
 * VS Code - or equivalent code editor/IDE
 ## Syllabus Updates
-
+This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
+Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
 ## Grading
+
 ## Attendance Policy
-
+* Punctual attendance at all classes is mandatory. 
+* Leaving early and arriving late will count as half-absences.
+* Three unexcused absences may result in a failing grade.
 ## Support Services
-## Schedule
-### Week 1
-#### Tuesday, January 4, 2022
-_Introduction to the Course_
-_Setup your environment_
-    * Github
-    * Terminal
-    * VSCode
 
-#### Thursday, January 6, 2022
-### Week 2
-#### Tuesday, January 11, 2022
+UC Santa Cruz is committed to creating an academic environment that supports its diverse student body. If you are a student with a disability who requires accommodations to achieve equal access in this course, please submit your Accommodation Authorization Letter from the Disability Resource Center (DRC) to me privately during my office hours or by appointment, preferably within the first two weeks of the quarter. At this time, I would also like us to discuss ways we can ensure your full participation in the course. I encourage all students who may benefit from learning more about DRC services to contact DRC by phone at 831-459-2089 or by email at drc@ucsc.edu.
 
-#### Thursday, January 13, 2022
-### Week 3
-#### Tuesday, January 18, 2022
+Learning Support Services provides support for students who need help with scholarly writing (as well as other skills and disciplines) Link here. Check with your advisor or program staff to find out more. 
 
-#### Thursday, January 20, 2022
-### Week 4
-#### Tuesday, January 25, 2022
+If an officially declared emergency makes travel to campus infeasible, UCSC Emergency Services http://oes.ucsc.edu/ will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology. 
 
-#### Thursday, January 27, 2022
-### Week 5
-#### Tuesday, February 1, 2022
+CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/cruzalert/index.html
 
-#### Thursday, February 3, 2022
-### Week 6
-#### Tuesday, February 8, 2022
 
-#### Thursday, February 10, 2022
-### Week 7
-#### Tuesday, February 15, 2022
-
-#### Thursday, February 17, 2022
-### Week 8
-#### Tuesday, February 22, 2022
-
-#### Thursday, February 24, 2022
-### Week 9
-#### Tuesday, March 1, 2022
-
-#### Thursday, March 3, 2022
-### Week 10
-#### Tuesday, March 8, 2022
-
-#### Thursday, March 10, 2022
-### FINAL EXAMS
-#### March 14-18, 2022
