@@ -5,6 +5,7 @@
 - Tuesday and Thursday
 - 9:50AM-11:25PM 
 - Building/Room 
+- [LINK TO SCHEDULE](./SCHEDULE.md)
 ## Course Description
 ## Instructor Information
 - Kristin Galvin, DMA 👽  
@@ -21,12 +22,13 @@
 ## Course Objectives
 
 ## Materials Needed
-Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice.
+Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice. You may be able to accomplish some of the assignments using a tablet or smartphone.
 
 You must be able to access the internet via eduroam or using an ethernet cable. 
 
 Links to any required readings will be provided by the instructor. 
 
+*** creative coding texts here ***
 http://eloquentjavascript.net/
 https://github.com/sorrycc/awesome-javascript
 
