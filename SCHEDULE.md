@@ -48,7 +48,7 @@ _Assignment #3: An Interactive Animation_
 * P5.js and the Browser
 * How to Make a Portfolio
 
-_Assignment #4: Make a Portfolio and Share it_
+_Assignment #4: Start a Portfolio and Share it_
 
 ## Week 3
 ### Tuesday, January 18, 2022
