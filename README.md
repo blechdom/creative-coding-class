@@ -26,16 +26,19 @@ Every student should bring a laptop with them to every class. If you cannot brin
 
 You must be able to access the internet via eduroam or using an ethernet cable. 
 
-Links to any required readings will be provided by the instructor. 
-
-*** creative coding texts here ***
-http://eloquentjavascript.net/
-https://github.com/sorrycc/awesome-javascript
-
 * 💻 a computer
 * :octocat: a github account
 * a terminal
 * VS Code - or equivalent code editor/IDE
+
+Links to any required readings will be provided by the instructor. 
+awesome-javascript
+
+### Processing Texts
+* (2012) https://natureofcode.com/book/
+### JavaScript Texts
+* http://eloquentjavascript.net/
+* https://github.com/sorrycc/awesome-javascript
 ## Syllabus Updates
 This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
 Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
@@ -55,4 +58,15 @@ If an officially declared emergency makes travel to campus infeasible, UCSC Emer
 
 CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/cruzalert/index.html
 
-
+## SCHEDULE SUMMARY
+### [Detailed Schedule Here](./SCHEDULE.md)
+### [WEEK 1: DRAWING](./DRAWING.md)
+### WEEK 2: ANIMATION
+### WEEK 3: INTERACTION
+### WEEK 4: VIDEO
+### WEEK 5: SOUND
+### WEEK 6: 3D GRAPHICS
+### WEEK 7: NETWORKS
+### WEEK 8: MACHINE LEARNING
+### WEEK 9: COLLABORATION
+### WEEK 10: FINAL PROJECT
