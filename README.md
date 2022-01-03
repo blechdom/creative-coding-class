@@ -57,7 +57,10 @@ Links to any required readings will be provided by the instructor.
 This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
 Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
 ## Grading
-
+* One or two creative projects will be ssigned every week for the first 8 weeks.
+* The assignments for each week are worth 10% of your grade. (80%)
+* The last two weeks will be reserved for a collaborative final project worth 20% of your grade. (100%)
+* Extra Credit: Create an online portfolio of your class work and share. (10%)
 ## Attendance Policy
 * Punctual attendance at all classes is mandatory. 
 * Leaving early and arriving late will count as half-absences.
@@ -73,7 +76,6 @@ If an officially declared emergency makes travel to campus infeasible, UCSC Emer
 CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/cruzalert/index.html
 
 ## SCHEDULE
-### [Detailed Schedule Here](./SCHEDULE.md)
 ### [WEEK 1: DRAWING](./DRAWING.md)
 ### [WEEK 2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
 ### [WEEK 3: IMAGES & VIDEO](./IMAGES_VIDEO.md)
