@@ -80,7 +80,7 @@ CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/c
 ### [WEEK 1: DRAWING](./DRAWING.md)
 ### [WEEK 2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
 ### [WEEK 3: IMAGES & VIDEO](./IMAGES_VIDEO.md)
-### WEEK 4: SOUND
+### [WEEK 4: SOUND](./SOUND.md)
 ### WEEK 5: 3D GRAPHICS
 ### WEEK 6: DATA
 ### WEEK 7: NETWORKS

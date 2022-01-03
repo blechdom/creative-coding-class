@@ -11,14 +11,13 @@
 * `loadSound()` function
 ```js
 function preload() {
-    img = loadSound('assets/img/cat.jpg')
+    snd = loadSound('assets/img/cat.jpg')
 }
 ```
 
 ```js
 function draw() {
-    image(img, 0, 0)
-    // image(img, x, y, width, height)
+    snd.play()
 }
 ```
 
