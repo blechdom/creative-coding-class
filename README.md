@@ -1,12 +1,15 @@
-# Creative Coding Syllabus
-- UCSC Engineering
-- Computational Media
+# Syllabus
+## CMPM 169 Creative Coding
+- UCSC Engineering Computational Media
 - Winter 2022
-- Tuesday and Thursday
-- 9:50AM-11:25PM 
-- Building/Room TBC
-- [LINK TO SCHEDULE](./SCHEDULE.md)
+- Tuesday and Thursday 9:50AM-11:25PM 
+- Building/Room (TBC)
+- 5 Credits
+- Prerequisites: CMPM 35 or CMPM 120 or CMPM 163 or by permission of instructor.
+- Enrollment is restricted to juniors, seniors, and graduate students.
 ## Course Description
+
+Surveys seminal and contemporary artworks and interactive installations that utilize and critically analyze new media, new technologies, and new algorithms. Students introduced to creative coding practices and encouraged to emulate existing digital arts techniques and to develop their own computational arts projects.
 ## Instructor Information
 - Kristin Erickson Galvin, DMA 👽  
 - kgericks@ucsc.edu 📩  
@@ -28,7 +31,7 @@
 
 Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice. You may be able to accomplish some of the assignments using a tablet or smartphone.
 
-You must be able to access the internet. On campus, it may be necessary to have access via eduroam or using an ethernet cable, due to port restriction.
+You must be able to access the internet. On campus, it may be necessary to have access via eduroam or using an ethernet cable due to port restrictions on the public network.
 
 Links to any required readings will be provided by the instructor. 
 ### P5.js and Processing Texts
@@ -41,6 +44,16 @@ Links to any required readings will be provided by the instructor.
 
 ### Art Resources
 * https://www.artblocks.io/artists
+
+### Books (optional)
+* _Code as Creative Medium: A Handbook for Computational Art and Design_ By Golan Levin and Tega Brain https://mitpress.mit.edu/books/code-creative-medium (and available for free from UCSC LIbrary!)
+
+* _Generative Design_ By Benedikt Gross, Hartmut Bohnacker, Julia Laub and Claudius Lazzeroni. http://www.generative-gestaltung.de/2/
+
+* _Getting Started with p5.js_ By Lauren McCarthy, Casey Reas, and Ben Fry. Illustrations by Taeyoon Choi.
+
+* The p5.js website has some suggestions: https://p5js.org/books/
+
 ## Syllabus Updates
 This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
 Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
