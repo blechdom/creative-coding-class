@@ -26,7 +26,6 @@ Surveys seminal and contemporary artworks and interactive installations that uti
 
 ## Materials Needed
 
-
 * 💻 a computer
 
 Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice. You may be able to accomplish some of the assignments using a tablet or smartphone.
@@ -73,11 +72,11 @@ If an officially declared emergency makes travel to campus infeasible, UCSC Emer
 
 CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/cruzalert/index.html
 
-## SCHEDULE SUMMARY
+## SCHEDULE
 ### [Detailed Schedule Here](./SCHEDULE.md)
 ### [WEEK 1: DRAWING](./DRAWING.md)
 ### [WEEK 2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
-### WEEK 3: [IMAGES & VIDEO](./IMAGES_VIDEO.md)
+### [WEEK 3: IMAGES & VIDEO](./IMAGES_VIDEO.md)
 ### WEEK 4: SOUND
 ### WEEK 5: 3D GRAPHICS
 ### WEEK 6: DATA
