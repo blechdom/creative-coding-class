@@ -33,8 +33,9 @@ Every student should bring a laptop with them to every class. If you cannot brin
 You must be able to access the internet. On campus, it may be necessary to have access via eduroam or using an ethernet cable due to port restrictions on the public network.
 
 Links to any required readings will be provided by the instructor. 
-### P5.js and Processing Texts
+### P5.js, Processing, and ml5.jw
 * https://p5js.org/
+* https://ml5js.org/
 * https://github.com/processing/p5.js/wiki/Educational-Resources
 * (2012) https://natureofcode.com/book/
 ### JavaScript Texts
