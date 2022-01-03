@@ -15,6 +15,9 @@
 * coordinate plane: (0,0) is top left
 * (x, y) - x is horizantal, y is vertical
 * non-pixel parameters are often between 0 and 255
+* comment a line with //
+* comment a block with /* */
+* log values with console.log() -> careful! logging can slow down your program
 ## Shapes
 * Reference: https://p5js.org/reference/#group-Shape
 * 2D Primitives: line(), rect(), ellipse(), triangle(), etc...
@@ -23,5 +26,13 @@
 * Reference: https://p5js.org/reference/#/p5/background
 * background(color)
 * greyscale, RGB, and alpha
-* stroke(), fill(), strokeWeight(), etc...
+* stroke(), fill(), noFil(), strokeWeight(), etc...
+* beginShape(), endShape(), vertex(), etc...
 ## Variables
+* let, const (or var, if you must)
+* built-in p5.js variables: width and height (the values set in createCanvas), widowWidth and windowHeight (the size of the window)
+
+## Iteration
+* for, while, forEach, map, filter, etc...
+
+

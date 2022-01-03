@@ -32,13 +32,15 @@ You must be able to access the internet via eduroam or using an ethernet cable.
 * VS Code - or equivalent code editor/IDE
 
 Links to any required readings will be provided by the instructor. 
-awesome-javascript
-
 ### Processing Texts
+* https://github.com/processing/p5.js/wiki/Educational-Resources
 * (2012) https://natureofcode.com/book/
 ### JavaScript Texts
 * http://eloquentjavascript.net/
 * https://github.com/sorrycc/awesome-javascript
+
+### Art Resources
+* https://www.artblocks.io/artists
 ## Syllabus Updates
 This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
 Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
@@ -61,11 +63,11 @@ CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/c
 ## SCHEDULE SUMMARY
 ### [Detailed Schedule Here](./SCHEDULE.md)
 ### [WEEK 1: DRAWING](./DRAWING.md)
-### WEEK 2: ANIMATION
-### WEEK 3: INTERACTION
-### WEEK 4: VIDEO
-### WEEK 5: SOUND
-### WEEK 6: 3D GRAPHICS
+### [WEEK 2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
+### WEEK 3: [IMAGES & VIDEO](./IMAGES_VIDEO.md)
+### WEEK 4: SOUND
+### WEEK 5: 3D GRAPHICS
+### WEEK 6: DATA
 ### WEEK 7: NETWORKS
 ### WEEK 8: MACHINE LEARNING
 ### WEEK 9: COLLABORATION

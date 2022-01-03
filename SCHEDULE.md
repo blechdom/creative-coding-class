@@ -28,7 +28,7 @@ _Assignment #1: A Drawing_
 _Assignment #2: A Generative Drawing_
 
 
-## Week 2: ANIMATION
+## Week 2: ANIMATION & INTERACTION
 ### <span style="color: red">__REMOTE -->__</span> Tuesday, January 11, 2022
 
 #### Animation
