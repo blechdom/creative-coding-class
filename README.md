@@ -57,10 +57,10 @@ Links to any required readings will be provided by the instructor.
 This syllabus is liable to change up to the beginning of class and possibly over the quarter. 
 Please check the posted syllabus regularly, and note all changes that are shared by the instructor in class.
 ## Grading
-* One or two creative projects will be ssigned every week for the first 8 weeks.
+* One or two creative projects will be assigned every week for the first eight weeks.
 * The assignments for each week are worth 10% of your grade. (80%)
 * The last two weeks will be reserved for a collaborative final project worth 20% of your grade. (100%)
-* Extra Credit: Create an online portfolio of your class work and share. (10%)
+* Extra Credit: Create an online portfolio of your projects and share. (10%)
 ## Attendance Policy
 * Punctual attendance at all classes is mandatory. 
 * Leaving early and arriving late will count as half-absences.
