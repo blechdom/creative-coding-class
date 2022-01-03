@@ -1,7 +1,7 @@
 # DRAWING
 ## P5.js
 * a JavaScript programming library developed by Lauren McCarthy, based on Processing.
-* Processing
+* Processing is an open-source digital art programming environment originally developed by Casey Reas and Ben Fry in 2001. (written in Java)
 * P5.js is an open source library
 * https://editor.p5js.org/
 * You can sign-in with your UCSC email
