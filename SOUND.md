@@ -1,5 +1,7 @@
 # SOUND
 * Requires P5.sound library
+
+## Sound Files
 * Make sure you are logged-in to the editor
 * Open the `Sketch Files` tab (the arrow above the top left corner of the coding window)
 * Select `Upload file`
@@ -14,11 +16,10 @@ function preload() {
     snd = loadSound('assets/img/cat.jpg')
 }
 ```
-
+* `snd.play()`, `setVolume()`, `snd.loop()`
 ```js
 function draw() {
     snd.play()
 }
 ```
-
-* `snd.play()`, `setVolume()`, `snd.loop()`
+## Synthesis
