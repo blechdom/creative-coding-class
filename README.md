@@ -4,35 +4,35 @@
 - Winter 2022
 - Tuesday and Thursday
 - 9:50AM-11:25PM 
-- Building/Room 
+- Building/Room TBC
 - [LINK TO SCHEDULE](./SCHEDULE.md)
 ## Course Description
 ## Instructor Information
-- Kristin Galvin, DMA 👽  
+- Kristin Erickson Galvin, DMA 👽  
 - kgericks@ucsc.edu 📩  
-- 831-346-2532 (texting okay) 📞  
+- 831-346-2532 (email preferred, text okay, although I don't always receive texts from iPhones) 📞  
 - office: remote 📍 
-- office hours: remote(TBD) 🕰️ 
+- office hours, remote and by request 🕰️ 
 ## T.A. Information
-- 👽 
-- 📩  
-- 📞 
-- 📍
-- 🕰️ 
+- Alex Calderwood 👽 
+- alexcwd@ucsc.edu 📩  
+- TBD 📞 
+- TBD 📍
+- TBD 🕰️ 
 ## Course Objectives
 
 ## Materials Needed
-Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice. You may be able to accomplish some of the assignments using a tablet or smartphone.
 
-You must be able to access the internet via eduroam or using an ethernet cable. 
 
 * 💻 a computer
-* :octocat: a github account
-* a terminal
-* VS Code - or equivalent code editor/IDE
+
+Every student should bring a laptop with them to every class. If you cannot bring a laptop, an alternative computing option can be provided with advanced notice. You may be able to accomplish some of the assignments using a tablet or smartphone.
+
+You must be able to access the internet. On campus, it may be necessary to have access via eduroam or using an ethernet cable, due to port restriction.
 
 Links to any required readings will be provided by the instructor. 
-### Processing Texts
+### P5.js and Processing Texts
+* https://p5js.org/
 * https://github.com/processing/p5.js/wiki/Educational-Resources
 * (2012) https://natureofcode.com/book/
 ### JavaScript Texts
