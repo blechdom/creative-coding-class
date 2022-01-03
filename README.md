@@ -1,9 +1,9 @@
 # Syllabus
 ## CMPM 169 Creative Coding
 - UCSC Engineering Computational Media
-- Winter 2022
+- 2022 Winter Quarter
 - Tuesday and Thursday 9:50AM-11:25PM 
-- Building/Room (TBC)
+- PhysSciences 114 and Remote
 - 5 Credits
 - Prerequisites: CMPM 35 or CMPM 120 or CMPM 163 or by permission of instructor.
 - Enrollment is restricted to juniors, seniors, and graduate students.
