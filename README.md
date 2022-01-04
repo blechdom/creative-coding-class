@@ -19,9 +19,9 @@ Surveys seminal and contemporary artworks and interactive installations that uti
 ## T.A. Information
 - Alex Calderwood 👽 
 - alexcwd@ucsc.edu 📩  
-- TBD 📞 
-- TBD 📍
-- TBD 🕰️ 
+- 406-381-9636 📞 
+- https://ucsc.zoom.us/j/93999912831?pwd=S0hyNUx2WlJUYm0yUjhUbXZHZmFpdz09 password: normal (In person: Engineering 2 Room 393)📍
+- Tentative: M, F 1-3pm 🕰️ 
 ## Materials Needed
 
 * 💻 a computer
