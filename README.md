@@ -37,8 +37,7 @@ Links to any required readings will be provided by the instructor.
 * https://github.com/processing/p5.js/wiki/Educational-Resources
 * (2012) https://natureofcode.com/book/
 ### JavaScript Texts
-* http://eloquentjavascript.net/
-* https://github.com/sorrycc/awesome-javascript
+* https://www.javascript.com/resources
 
 ### Art Resources
 * https://www.artblocks.io/artists
