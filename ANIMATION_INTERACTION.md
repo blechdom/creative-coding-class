@@ -37,7 +37,7 @@ function mousePressed(event) {
 https://p5js.org/reference/#group-Constants
 * PI, HALF_PI, QUARTER_PI, TWO_PI, TAU, DEGREES, RADIANS 
 ### Example Code
-#### Bouncing Ball
+#### Pong-Like Animation
 ```js
 let x, y = 0
 let down = true

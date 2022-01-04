@@ -22,8 +22,6 @@ Surveys seminal and contemporary artworks and interactive installations that uti
 - TBD 📞 
 - TBD 📍
 - TBD 🕰️ 
-## Course Objectives
-
 ## Materials Needed
 
 * 💻 a computer
@@ -33,7 +31,7 @@ Every student should bring a laptop with them to every class. If you cannot brin
 You must be able to access the internet. On campus, it may be necessary to have access via eduroam or using an ethernet cable due to port restrictions on the public network.
 
 Links to any required readings will be provided by the instructor. 
-### P5.js, Processing, and ml5.jw
+### P5.js and ml5.js
 * https://p5js.org/
 * https://ml5js.org/
 * https://github.com/processing/p5.js/wiki/Educational-Resources
@@ -78,9 +76,9 @@ CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/c
 
 ## SCHEDULE
 ### [WEEK 1: DRAWING](./DRAWING.md)
-### [WEEK 2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
-### [WEEK 3: IMAGES & VIDEO](./IMAGES_VIDEO.md)
-### [WEEK 4: SOUND](./SOUND.md)
+### WEEK 2: ANIMATION & INTERACTION
+### WEEK 3: IMAGES & VIDEO
+### WEEK 4: SOUND
 ### WEEK 5: 3D GRAPHICS
 ### WEEK 6: DATA
 ### WEEK 7: NETWORKS
