@@ -11,8 +11,8 @@
 * semi-colons are optional
 * top-down order of operations
 * camelCase for variables and functions
-* createCanvas()
-* coordinate plane: (0,0) is top left
+* createCanvas() (2D), or createGraphics() (3D)
+* coordinate plane: (0,0) is top left (center for 3)
 * (x, y) - x is horizantal, y is vertical
 * non-pixel parameters are often between 0 and 255
 * comment a line with //
