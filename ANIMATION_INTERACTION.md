@@ -37,90 +37,86 @@ function mousePressed(event) {
 https://p5js.org/reference/#group-Constants
 * PI, HALF_PI, QUARTER_PI, TWO_PI, TAU, DEGREES, RADIANS 
 ### Example Code
-#### Pong-Like Animation
+#### Drawing with Mirrors
 ```js
-let x, y = 0
-let down = true
-let speed = 3
+let strokeColor = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight)
-  x = windowWidth / 2
-  y = windowHeight / 2
+  createCanvas(400, 400);
+  background(220);
 }
 
 function draw() {
-  speed = mouseY / 8
-  background(220)
-  strokeWeight(10)
-  line(x, y - 1, x, y + 1)
-  if (down) {
-    if (x > 0) {
-      x -= speed
-    } else {
-      down = false
-    }
-  } else {
-    if (x < windowWidth){
-      x += speed
-    }
-    else {
-      down = true
-    }
-  }
-}
-```
-
-```js
-let x, y = 0
-let down = true
-let speed = 3
-
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  background(220)
-  x = 0
-  y = 0
-}
-
-function draw() {
-  speed = .5
-  background(220)
-  for(let i=0; i<8; i++){
-   backAndForth(i) 
-  }
-}
-
-function backAndForth(i) {
-  //console.log(x)
-  let xOffset = ((windowWidth / 8) * i) + (windowWidth/16)
-  let yOffset = ((windowHeight / 8) * i) + (windowHeight/16)
+  noStroke();
+  fill(255, 0, 0);
+  rect(0, 0, 25, 25);
   
-  ellipse((x+xOffset)%windowWidth, y+yOffset, windowWidth / 8, windowHeight / 8)
-  x += speed
-  let thisX = (x+xOffset)%windowWidth;
-  let goingUp = true;
-  if(thisX > (windowWidth - (windowWidth/8))){
-    goingUp = false;
-  }
-  //console.log('goingUp ', goingUp)
-  ellipse(thisX, y+yOffset, windowWidth / 8, windowHeight / 8)
-  /*if (down) {
-    
-    if (x > 0) {
-      x -= speed
-    } else {
-      down = false
-    }
+  if (mouseX < 25 && mouseY < 25) {
+    fill(0, 255, 0);
+    rect(0, 0, 25, 25);
   } else {
-    if (x < windowWidth){
-      x += speed
-    }
-    else {
-      down = true
-    }
+    fill(255, 0, 0);
+    rect(0, 0, 25, 25);
   }
-  */
+
+  stroke(strokeColor);
+  if (mouseIsPressed == true) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    line(width - mouseX, mouseY, width - pmouseX, pmouseY);
+    line(mouseX, height - mouseY, pmouseX, height - pmouseY);
+    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
+  }
+  //console.log("mouseX: ", mouseX);
+}
+
+function mousePressed(event) {
+  if (event.shiftKey) {
+    strokeWeight(10);
+  } else {
+    strokeWeight(1);
+  }
+  if (mouseX < 25 && mouseY < 25) {
+      if(strokeColor== 0) {
+        strokeColor = 220
+      } else{
+        strokeColor = 0
+      }
+      console.log("stroke color ", strokeColor)
+    }
+    console.log('color', strokeColor)
+}
+
+```
+#### Mouse-Controlled Animations
+```js
+let i = 0;
+let backgroundColor = 255
+
+function setup() {
+  createCanvas(400, 400);
+  
+}
+
+function draw() {
+  background(backgroundColor);
+  noStroke();
+  
+  let mappedColor = map(mouseX, 0,400, 0, 255)
+  
+  fill(mappedColor,mouseX%255,mouseY%255)
+  circle(width/2, height/2, mouseX)
+  
+  
+  fill(255, 0, 0);
+  rect(i%width, height/2, 25, 25);
+  i += mouseY/25
+  
+  
+
+}
+
+function keyPressed() {
+backgroundColor = keyCode*2
 }
 
 ```
