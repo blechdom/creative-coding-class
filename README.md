@@ -74,11 +74,12 @@ If an officially declared emergency makes travel to campus infeasible, UCSC Emer
 CruzAlert Emergency Notification System can be found here: http://oes.ucsc.edu/cruzalert/index.html
 
 ## SCHEDULE
-### [WEEK 1: DRAWING](./DRAWING.md)
-### WEEK 2: ANIMATION & INTERACTION
-### WEEK 3: IMAGES & VIDEO
-### WEEK 4: SOUND
-### WEEK 5: 3D GRAPHICS
+### [WEEK 1.1: DRAWING](./DRAWING.md)
+### [WEEK 1.2: ANIMATION & INTERACTION](./ANIMATION_INTERACTION.md)
+### [WEEK 2: IMAGES & VIDEO](./IMAGES_VIDEO.md)
+### WEEK 3: SOUND
+### WEEK 4: 3D GRAPHICS
+### WEEK 5: POETRY
 ### WEEK 6: DATA
 ### WEEK 7: NETWORKS
 ### WEEK 8: MACHINE LEARNING

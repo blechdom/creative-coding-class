@@ -120,3 +120,42 @@ backgroundColor = keyCode*2
 }
 
 ```
+
+### Easing
+
+#### example code
+##### Follow the mouse
+```js
+  function draw() {
+    background(255)
+    line(x, 0, x, height)
+
+    let easing = 0.5
+    let diff = mouseX - x
+    x += diff * easing
+  }
+
+```
+
+##### Send a shape to the target
+```js
+let x, y, targetX, targetY = 0
+
+function draw() {
+  background(255)
+  circle(x, y, 50)
+
+  let easing = 0.125
+  let diffX = targetX - x
+  let diffY = targetY - y
+  x += diffX * easing
+  y += diffY * easing
+}
+
+function mousePressed(){
+  targetX = mouseX
+  targetY = mouseY
+}
+
+```
+
