@@ -30,3 +30,9 @@ function draw() {
 ```js
 text('Hello World', x, y, width, height)
 ```
+
+## More P5.js Concepts
+* `push()` and `pop()` are used to save and restore the current drawing state
+* `rotate()`, `translate()`, `scale()`, and `shear()` are used to change the current transformation matrix
+* `bezier()`, `quadraticVertex()`, and `curveVertex()` are used to draw Bézier curves
+* `noLoop()` and `loop()` are used to control whether the `draw()` function continuously executes
