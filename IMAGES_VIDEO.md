@@ -78,3 +78,32 @@ function draw() {
   }
 }
 ```
+### WebCam ASCII
+
+```js
+let webCam;
+
+function setup() {
+  createCanvas(480, 240);
+  pixelDensity(1);
+  webCam = createCapture(VIDEO);
+  webCam.size(width, height);
+  webCam.hide();
+  noStroke();
+  fill(0);
+}
+
+function draw() {
+  background(255);
+  webCam.loadPixels();
+  stepSize = 4
+  for (let y = 0; y < height; y+=stepSize) {
+    for (let x = 0; x < width; x+=stepSize) {
+      const i = (y * width + x) * 4;
+      fill(webCam.pixels[i], webCam.pixels[i+1], webCam.pixels[i+2], webCam.pixels[i+3], webCam.pixels[i+4])
+      textSize(stepSize*2)
+      text(char(webCam.pixels[i]%128), x, y);
+    }
+  }
+}
+```
