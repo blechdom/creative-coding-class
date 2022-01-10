@@ -36,3 +36,45 @@ text('Hello World', x, y, width, height)
 * `rotate()`, `translate()`, `scale()`, and `shear()` are used to change the current transformation matrix
 * `bezier()`, `quadraticVertex()`, and `curveVertex()` are used to draw Bézier curves
 * `noLoop()` and `loop()` are used to control whether the `draw()` function continuously executes
+
+## Pixels
+
+* `pixels[]` is an array of the values in the image data
+* `loadPixels()` is used to load the pixel data for the image into the `pixels` array
+* `updatePixels()` is used to update the image with the data in the `pixels` array
+* `get()` and `set()` are used to access and set the individual pixels in the `pixels` array
+* `set()` is used to set the color of a single pixel
+
+
+## live camera
+
+* `video = createCapture(VIDEO)`
+* https://editor.p5js.org/codingtrain/sketches/B1L5j8uk4
+```js
+// Daniel Shiffman
+// https://thecodingtrain.com
+// https://youtu.be/WCJM9WIoudI
+// https://youtu.be/YqVbuMPIRwY
+let video;
+
+let x = 0;
+
+function setup() {
+  createCanvas(800, 240);
+  pixelDensity(0.2);
+  video = createCapture(VIDEO);
+  video.size(320, 240);
+  background(51);
+}
+
+function draw() {
+  video.loadPixels();
+  let w = video.width;
+  let h = video.height;
+  copy(video, w/2, 0, 1, h, x, 0, 1, h);
+  x = x + 1;
+  if (x > width) {
+    x = 0;
+  }
+}
+```
