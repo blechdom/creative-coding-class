@@ -45,7 +45,30 @@ text('Hello World', x, y, width, height)
 * `get()` and `set()` are used to access and set the individual pixels in the `pixels` array
 * `set()` is used to set the color of a single pixel
 
+## process an image
+```js
+let cat;
 
+function preload() {
+  cat = loadImage('cat.jpg');
+}
+
+function setup() {
+  createCanvas(cat.width, cat.height)
+}
+
+function draw() {
+  cat.loadPixels();
+  for (var y = 0; y < height; y++) {
+        for (var x = 0; x < width; x++) {
+          var index = (x + y * width)*4;
+          cat.pixels[index+3] = random(255);    
+        }
+      }
+  cat.updatePixels();
+  image(cat, 0, 0, width/4, height/4);
+}
+```
 ## live camera
 
 * `video = createCapture(VIDEO)`
@@ -107,3 +130,69 @@ function draw() {
   }
 }
 ```
+### https://www.mathiasbernhard.ch/ascii-art-with-p5js/
+```js
+let resdiv;
+var options = [' ','`','.',',-',"':",';_~','"','*|','!l',
+'+=','>','<L','\\i','/^','1?','Jv','r','()cx','7}','sz','3u','2Ckty{','jn','4FVY','5P[]af','qw','Sde','Eo',
+'NOZ','9HXgh','GTU','$AIm','QW','KM','%8','#06@','bp',
+'D','&','R','B'];
+
+var capture;
+var pg;
+
+function setup() {
+  resdiv = createP('');
+  
+  pg = createGraphics(160,120);
+  capture = createCapture(VIDEO);
+  capture.size(160, 120);
+  capture.hide();
+  
+  background(255);
+}
+
+function draw() {
+  pg.image(capture,0,0,160, 120);
+  var res = '<pre>';
+  for (var i=0; i<height; i++) {
+    var line = '';
+    for (var j=0; j<width+height; j++) {
+      var x = pg.get(round(j*1.143),i*2);
+      var f = (1-x[0]/255.0);
+      f = f*f;
+      var v = round(f*40);
+      var index = floor(random(options[v].length));
+      var chr = options[v][index];
+      if (chr==' ') chr='&nbsp;';
+      if (chr=='<') chr='&lt;';
+      if (chr=='>') chr='&gt;';
+      if (chr=='"') chr='&quot;';
+      line += chr;
+    }
+
+    res += line+'<br>';
+  }
+  res += '</pre>'
+  resdiv.html(res);
+}
+```
+
+## READING
+
+* https://idmnyu.github.io/p5.js-image/
+
+## FILTERS
+* THRESHOLD - Converts the image to black and white pixels, parameter between 0.0 and 1.0
+* GRAY - Converts any colors in the image to grayscale equivalents
+* OPAQUE - Sets the alpha channel to entirely opaque
+* INVERT - Sets each pixel to its inverse value
+* POSTERIZE - Limits each channel of the image to the number of colors specified as the parameter
+* DILATE - Increases the light areas
+* BLUR - Executes a Gaussian blur with the level parameter
+* ERODE - Reduces the light areas
+
+## SHADERS
+* https://github.com/aferriss/p5jsShaderExamples#image-effects
+
+<img src='oreilly.jpeg' width='250'>
