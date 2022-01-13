@@ -28,7 +28,22 @@ function draw() {
 * dowload from web or use https://fonts.google.com/
 * `textFont()`, `loadFont()` and `textSize()`
 ```js
-text('Hello World', x, y, width, height)
+
+let myFont;
+function preload() {
+  myFont = loadFont('assets/inconsolata.otf');
+}
+
+function setup() {
+  fill('#ED225D');
+  textFont(myFont);
+  textSize(36);
+  text('p5*js', 10, 50);
+}
+
+function draw() {
+  text('Hello World', x, y, width, height)
+}
 ```
 
 ## More P5.js Concepts
