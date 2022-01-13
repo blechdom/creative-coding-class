@@ -60,6 +60,27 @@ function draw() {
 * `get()` and `set()` are used to access and set the individual pixels in the `pixels` array
 * `set()` is used to set the color of a single pixel
 
+## color picker
+```js
+let img;
+function preload(){
+  img = loadImage("land.jpg");
+}
+
+function setup() {
+  createCanvas(400, 400);
+  stroke(255);
+}
+
+function draw() {
+  // image(img,0,0,width,height);
+  set(0, 0, img); // set() replaces every pixel on the canvas with pixels of img
+  let c = get(mouseX, mouseY); // get() grabs the color of the pixel right underneath the cursor and store it inside c
+  fill(c);
+  rect(50,50,50,50);
+  updatePixels(); 
+}
+```
 ## process an image
 ```js
 let cat;
