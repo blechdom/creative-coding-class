@@ -274,7 +274,130 @@ function draw() {
 ```
 
 
+```js
+let angle = 0.0;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  fill(0)
+  strokeWeight(1)
+  frameRate(25)
+}
+
+function draw() {
+  let speed = map(mouseY, 0, height, 0, 0.2)
+  let arm1 = map(mouseX, 0, width, 10, 400)
+  background(255)
+  push()
+  stroke(random(255),random(255),random(255))
+  translate(width/2, height/2)
+  for(let i=0; i<100; i++){
+    extendArm(arm1, angle)
+  }
+  pop()
+  push()
+  stroke(random(255),random(255),random(255))
+  translate(width/2, height/2)
+  for(let i=0; i<100; i++){
+    extendArm(arm1, angle)
+  }
+  pop()
+  push()
+  stroke(random(255),random(255),random(255))
+  translate(width/2, height/2)
+  for(let i=0; i<100; i++){
+    extendArm(arm1, angle)
+  }
+  pop()
+  angle += speed
+}
+
+function extendArm(armLength, angle) {
+  let randomOffset = random(100)
+  rotate(angle)  //radians
+  line(0, 0, 0, randomOffset)
+  translate(0, randomOffset)
+}
 ```
 
+### ELLIPSE PATTERNS
 
+```js
+let angle = 0.0;
+let speed = 0.05;
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noFill()
+}
+
+function draw() {
+  let speed = map(mouseY, 0, height, -0.2, 0.2)
+  let arm = map(mouseX, 0, width, 10, 400)
+  
+  background(255)
+
+  translate(width/2, height/2)
+  rotate(angle)
+  for(let i=0; i<10; i++){
+    push()
+    rotate(i*TWO_PI/10)
+    translate(0, arm)
+    ellipse(0,0,50,50)
+    pop()
+  }
+  
+  angle += speed
+}
+```
+
+```js
+let angle = 0.0;
+let speed = 0.05;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noFill()
+}
+
+function draw() {
+  let speed = map(mouseY, 0, height, -0.1, 0.1)
+  let arm = map(mouseX, 0, width, 1, 400)
+  let arm2 = map(mouseY+mouseX, 0, height+width, 1, 400)
+  
+  background(255)
+
+  translate(width/2, height/2)
+  rotate(angle)
+  for(let i=0; i<10; i++){
+    push()
+    rotate(i*TWO_PI/10)
+    translate(0, arm)
+    ellipse(0,0,20,20)
+   
+    rotate(angle)
+    for(let j=0; j<10; j++){
+      push()
+      rotate(j*TWO_PI/10)
+      translate(0, arm2)
+      ellipse(0,0,20,20)
+      for(let k=0; k<10; k++){
+        push()
+        rotate(k*TWO_PI/10)
+        translate(0, arm2)
+        ellipse(0,0,20,20)
+        pop()
+      }
+      pop()
+    }
+    
+    pop()
+  }
+  
+  angle += speed
+}
+
+function keyPressed(){
+  console.log('keycode', keyCode)
+}
+```
