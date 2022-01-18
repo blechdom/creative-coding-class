@@ -170,8 +170,7 @@ circle(0, 0, 50) // will move the circle to the mouse position
 * Scale - `scale(x, y)` - scales a shape around its origin point, parameters are percentage values
 * Shear - `shearX(angle)` - shears a shape around its x-axis
 * Shear - `shearY(angle)` - shears a shape around its y-axis
-* Skew - `skewX(angle)` - skews a shape around its x-axis
-* Skew - `skewY(angle)` - skews a shape around its y-axis
+
 
 * `push()` and `pop()` are used to save and restore the current drawing state
 
@@ -240,6 +239,35 @@ function draw() {
 ```
 
 ### Patterns
+
+#### 10Print
+* https://10print.org/
+
+```js
+let x = 0;
+let y = 0;
+let spacing = 15;
+
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+}
+
+function draw() {
+  stroke(0);
+  strokeWeight(2)
+  if (random(1) < 0.5) {
+    line(x, y, x + spacing, y + spacing);
+  } else {
+    line(x, y + spacing, x + spacing, y);
+  }
+  x = x + spacing;
+  if (x > width) {
+    x = 0;
+    y = y + spacing;
+  }
+}
+```
 
 ```js
 let angle = 0.0;
@@ -401,3 +429,135 @@ function keyPressed(){
   console.log('keycode', keyCode)
 }
 ```
+
+### with key commands
+```js
+let angle = 0.0;
+let speed = 0.05;
+let numThings = 3;
+let circSize = 10;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noFill()
+}
+
+function draw() {
+  let speed = map(mouseY, 0, height, -0.1, 0.1)
+  let arm = map(mouseX, 0, width, 1, 400)
+  let arm2 = map(mouseY+mouseX, 0, height+width, 1, 400)
+  
+  background(255)
+
+  translate(width/2, height/2)
+  rotate(angle)
+  for(let i=0; i<numThings; i++){
+    push()
+    rotate(i*TWO_PI/numThings)
+    translate(0, arm)
+    circle(0,0,circSize)
+   
+    rotate(angle)
+    for(let j=0; j<numThings; j++){
+      push()
+      rotate(j*TWO_PI/numThings)
+      translate(0, arm2)
+      circle(0,0,circSize)
+      for(let k=0; k<numThings; k++){
+        push()
+        rotate(k*TWO_PI/numThings)
+        translate(0, arm2)
+        circle(0,0,circSize)
+        pop()
+      }
+      pop()
+    }
+    
+    pop()
+  }
+  
+  angle += speed
+}
+
+function keyPressed(){
+  if(keyCode===38){
+    numThings++;
+  }
+  if(keyCode===40){
+    (numThings > 1) && numThings--;
+  }
+  if(keyCode===37){
+    (circSize > 1) && circSize--;
+  }
+  if(keyCode===39){
+    circSize++;
+  }
+  console.log('circSize: ', circSize)
+  console.log('numThings: ', numThings)
+}
+```
+
+### Recursize example
+
+```js
+let angle = 0.0;
+let speed = 0.05;
+let numThings = 3;
+let maxCircSize = 10;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noFill()
+}
+
+function draw() {
+  let speed = map(mouseY, 0, height, -0.1, 0.1)
+  let maxArm = map(mouseX, 0, width, 1, 400)
+  
+  background(255)
+  
+  translate(width/2, height/2)
+  rotate(angle)
+  drawShapes(maxArm, maxCircSize, 3)
+
+  angle += speed
+}
+function drawShapes(arm, circSize, level) {
+  if (level > 0){
+    for(let i=0; i<numThings; i++){
+      push()
+      rotate(i*TWO_PI/numThings)
+      translate(0, arm)
+      circle(0,0,circSize)
+      rotate(angle)
+
+      drawShapes(arm/2, circSize/2, level-1)
+      pop()
+    }
+  }
+}
+
+function keyPressed(){
+  if(keyCode===38){
+    numThings++;
+  }
+  if(keyCode===40){
+    (numThings > 1) && numThings--;
+  }
+  if(keyCode===37){
+    (maxCircSize > 1) && maxCircSize--;
+  }
+  if(keyCode===39){
+    maxCircSize++;
+  }
+}
+```
+
+
+### Patterns and Iterative Art links
+* https://10print.org/
+* http://www.generative-gestaltung.de/2/
+* https://digitalideation.github.io/ba_222_gencg_h1801/notebooks/week01.html
+* https://store.doverpublications.com/0486469816.html
+* https://books.google.com/books/about/Designing_Tessellations.html?id=y984AQAAIAAJ
+* https://www.theedkins.co.uk/jo/tess/grids.htm
