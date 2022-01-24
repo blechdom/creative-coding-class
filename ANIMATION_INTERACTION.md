@@ -174,6 +174,34 @@ circle(0, 0, 50) // will move the circle to the mouse position
 
 * `push()` and `pop()` are used to save and restore the current drawing state
 
+```js
+beginShape();
+    vertex(0, 0);
+    vertex(60, 0);
+    vertex(60, 20);
+    vertex(20, 20);
+    vertex(20, 40);
+    vertex(60, 40);
+    vertex(60, 60);
+    vertex(0, 60);
+  endShape(CLOSE);
+```
+
+```js
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  let shearXAmount = map(mouseX, 0, width, -HALF_PI, HALF_PI)
+  console.log(shearXAmount)
+  translate(width / 2, height / 2);
+  shearY(shearXAmount);
+  rect(0, 0, 150, 150);
+}
+```
+
 ### Motion
 * sin(angle) - returns the sine of an angle
 * cos(angle) - returns the cosine of an angle
@@ -561,3 +589,71 @@ function keyPressed(){
 * https://store.doverpublications.com/0486469816.html
 * https://books.google.com/books/about/Designing_Tessellations.html?id=y984AQAAIAAJ
 * https://www.theedkins.co.uk/jo/tess/grids.htm
+* https://mathigon.org/course/fractals/sierpinski 
+
+
+### NOISE pattern
+```js
+// M_1_3_02
+//
+// Generative Gestaltung – Creative Coding im Web
+// ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
+// Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
+// with contributions by Joey Lee and Niels Poldervaart
+// Copyright 2018
+//
+// http://www.generative-gestaltung.de
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * creates a texture based on random values
+ *
+ * MOUSE
+ * click               : new noise line
+ *
+ * KEYS
+ * s                   : save png
+ */
+'use strict';
+
+var sketch = function(p) {
+
+  var actRandomSeed = 0;
+
+  p.setup = function() {
+    p.createCanvas(512,512);
+  };
+
+  p.draw = function() {
+    p.background(0);
+
+    p.randomSeed(actRandomSeed);
+
+    for (var x = 0; x < p.width; x++) {
+      for (var y = 0; y < p.height; y++) {
+        p.set(x, y, p.random(255));
+      }
+    }
+    p.updatePixels();
+  };
+
+  p.mousePressed = function() {
+    actRandomSeed = p.random(100000);
+  };
+
+  p.keyReleased = function() {
+    if (p.key == 's' || p.key == 'S') p.saveCanvas(gd.timestamp(), 'png');
+  };
+
+};
+
+var myp5 = new p5(sketch);
+```

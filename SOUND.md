@@ -23,3 +23,16 @@ function draw() {
 }
 ```
 ## Synthesis
+
+## Resources
+* https://creative-coding.decontextualize.com/synthesizing-analyzing-sound/
+
+* https://p5js.org/reference/#/libraries/p5.sound
+
+* https://dood.al/pinktrombone/
+
+* https://nathanmelenbrink.github.io/artg2260/09_media/audio.html
+
+* https://therewasaguy.github.io/p5-music-viz/
+
+* https://www.jezzamon.com/fourier/
