@@ -96,6 +96,13 @@ function draw() {
 ### READING
 * https://itp-xstory.github.io/p5js-shaders/#/
 * https://thebookofshaders.com/
+* Shader library https://www.geeks3d.com/shader-library/
+* Book of shaders https://thebookofshaders.com/13/
+* Lots of 3D models https://free3d.com/3d-models/obj
+* Apply a texture in p5js https://p5js.org/reference/#/p5/texture
+* DoF in p5js algorithmically https://www.davepagurek.com/blog/depth-of-field/
+* Explanation of normals https://youtu.be/6_-NNKc4lrk
+* Web GL normal mapping and bump map https://apoorvaj.io/exploring-bump-mapping-with-webgl/
 ### CODE
 
 * DEMO: https://editor.p5js.org/louiselessel/sketches/xCPxmXGVE
