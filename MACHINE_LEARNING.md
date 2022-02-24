@@ -110,3 +110,117 @@ function gotResult(error, results) {
 * FACEMESH-WEBCAM https://editor.p5js.org/ml5/sketches/Facemesh_Webcam
 * HANDPOSE-WEBCAM https://editor.p5js.org/ml5/sketches/Handpose_Webcam
 * PIX2PIX https://editor.p5js.org/ml5/sketches/Pix2Pix_callback
+
+# BUILDING A NEURAL NETWORK
+* Wekenator: http://www.wekinator.org/
+* Rebecca Fiebrink: http://www.doc.gold.ac.uk/~mas01rf/
+* Coding Train: https://thecodingtrain.com/
+* Daniel Shiffman: https://shiffman.net/
+
+* include ml5 library in your index.html file
+* neuralNetwork function can take csv or json file
+* simple process
+  * collect data
+  * train model
+  * prediction
+
+```js
+let model
+let targetLabel = 'A'
+let state = 'collection'
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  
+  let options = {
+    inputs: ['x', 'y'],
+    outputs: ['label'], // automatically determines number of outputs
+    task: 'classification', // regression also possible
+   /*outputs: ['frequency'],
+    task: 'regression', */
+    debug: true
+    // learningRate: 0.5        
+  }
+  
+  model = ml5.neuralNetwork(options)
+  
+  // model.loadData('filename.json', dataLoaded) // upload to editor first
+}
+
+function dataLoaded() {
+  //console.log(model.data)
+}
+
+function keyPressed() {
+  if (key == 't'){
+    state = 'training'
+    console.log('training model')
+    model.normalizeData()
+    
+    let options = {
+      epochs: 200
+      // batchSize: 12
+    }
+    model.train(options, whileTraining, finishedTraining)
+  } else if (key == 's') {
+    model.saveData()
+  }
+  else{
+     targetLabel = key.toUpperCase()
+  }
+}
+
+function mousePressed() {
+  
+  let inputs = {
+    x: mouseX, 
+    y: mouseY
+  }
+  if (state == 'collection'){
+    let target = {
+      label: targetLabel
+      //frequency: targetFloat (float() on numbers)
+    }
+
+    model.addData(inputs, target) // inputs data to    
+  
+    stroke(0)
+    noFill()
+    ellipse(mouseX, mouseY, 24)
+    fill(0)
+    textAlign(CENTER, CENTER)
+    text(targetLabel, mouseX, mouseY)
+  }
+  else if(state = 'prediction'){
+    model.classify(inputs, gotResults)
+    //model.predict(inputs, gotResults)
+  }
+}
+
+function whileTraining(epoch, loss) {
+  console.log('epoch: ', epoch)
+}
+
+function finishedTraining() {
+  state = 'prediction'
+  console.log('finished training.')
+  
+}
+
+function gotResults(error, results) {
+  if(error) {
+    console.error('error')
+    return
+  }
+  console.log(results)
+    
+  stroke(0)
+  fill(0, 255, 0)
+  ellipse(mouseX, mouseY, 24)
+  fill(0)
+  textAlign(CENTER, CENTER)
+  text(results[0].label, mouseX, mouseY)
+  // text(results[0].value, mouseX, mouseY)
+}
+```
+
